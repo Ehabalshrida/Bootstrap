@@ -1,0 +1,68 @@
+
+:root{
+    --dark-color:#19283f;
+    --green-color:#33dacc;
+
+
+}
+body{
+    font-family: "Roboto";
+    height: 10000px;
+}
+.navbar{
+    background-color: var(--dark-color);
+}
+.navbar .navbar-nav .nav-link{
+    color: white;
+}
+
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+color: var(--green-color);
+}
+.iconSearch{
+    border-left: 1px white solid;
+}
+.iconSearch svg{
+    color: var(--green-color);
+}
+.navbar-toggler{
+    color:wheat;
+    border-color:wheat;
+    font-size: 25px;
+}
+
+
+.navbar-toggler:focus{
+    box-shadow: none;
+} 
+ 
+.navbar-toggler[aria-expanded="true"]{
+    border-color:blueviolet;
+}  
+
+.radio-btn-group input[type="radio"] + label{
+    position:relative;
+    padding-left:1.5em;
+    line-height:1.5em;
+    cursor:pointer;
+    display:inline-block;
+    }
+    .radio-btn-group input[type="radio"] + label::before{
+      content:"";
+      position:absolute;
+      width:1em;
+      height:1em;
+      top:0;
+      left:0;
+      bottom:0;
+      margin:0;
+      border-radius:50%;  
+      background: #0E2445;  
+      border:2px solid #ffff
+    }
+    .radio-btn-group input[type="radio"]:checked + label::before{
+     box-shadow: inset 0 0 0 .1em #fff,inset 0 0 0 2em #fff  }
+    
+     .radio-btn-group input[type="radio"]{
+     }
